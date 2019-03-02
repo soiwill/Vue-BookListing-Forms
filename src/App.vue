@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    {{message}}
     <img src="./assets/logo.png">
     <book-list></book-list>
   </div>
@@ -13,6 +14,11 @@ export default {
   components: {
     BookList,
   },
+  data() {
+    return {
+      message: 'Hello Test!'
+    }
+  }
 };
 </script>
 
